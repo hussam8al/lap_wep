@@ -1,0 +1,263 @@
+body, h1, h2, h3, p, ul, li, button {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+.container {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; 
+    
+}
+
+
+/* يحدد خلفية الرائس ولون النص والتباعد الدخلي */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+/* يخفي النقاط التي تظهر بجانب عناصر القائمه */
+nav ul {
+    list-style-type: none;
+}
+/* يحدد عرض القائمه والتباعد بينها*/
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+.marquee-container {
+    width: 100%;
+    background: #f9f9f9;
+    overflow: hidden;
+    white-space: nowrap;
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+    margin-top: 20px; /* مسافة أعلى القسم */
+}
+
+.marquee {
+    display: inline-block;
+    padding-left: 60%;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translate(100%, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+.image-slider {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.column {
+    position: relative;
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column img {
+    width: 80%;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+.column img:hover {
+    transform: scale(1.05);
+}
+
+.popup-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 1;
+    top: 40px;
+    right: 10px;
+}
+
+.popup-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup-menu a:hover {
+    background-color: #f2f2f2;
+}
+
+
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+/* يخفي النقاط التي تظهر بجانب عناصر القائمه */
+nav ul {
+    list-style-type: none;
+}
+/* يحدد عرض القائمه والتباعد بينها*/
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+.hero {
+    background-image: url('hero-bg.jpg');/* يحدد 2ورة الخلفثيه للمنطقه الرئيسيه */
+    background-size: cover;/* dqf' p[l hgw,vm gjy'dm hglk'ri fhg;lg */
+    /*يحدد لون النص والتباعد الداخلي ومحاذاة النص الى الوسط */
+    color: #211d1d;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #555;
+}
+
+
+.featured-products {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* ثلاثة أعمدة */
+    grid-auto-rows: minmax(200px, auto); /* صفوف بارتفاع متغير */
+    grid-gap: 20px;
+}
+
+.product {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    margin-bottom: 5px;
+}
+
+.product p {
+    font-size: 14px;
+    color: #555;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 14px;
+}
+.slider {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 600px; /* تعيين عرض السلايدر */
+    
+  }
+  
+  .slides {
+    display: flex;
+    animation: slide 6s infinite; /* تعيين مدة التحول والتكرار */
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+  }
+  
+  .slide img {
+    width: 1519px;
+    height: 300px;
+  }
+  
+  /* تحديد الحركة الافتراضية للسلايدر */
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    33.333% { transform: translateX(-100%); }
+    66.667% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+  }
